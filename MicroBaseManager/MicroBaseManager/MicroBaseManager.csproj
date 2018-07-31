@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F7DDC87-7283-4C3B-8867-F5B133DC6C3B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MicroBaseManager</RootNamespace>
+    <AssemblyName>MicroBaseManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'daasdasdasdads|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\daasdasdasdads\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutProgramForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutProgramForm.Designer.cs">
+      <DependentUpon>AboutProgramForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewConnectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewConnectionForm.Designer.cs">
+      <DependentUpon>AddNewConnectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVariable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVariable.Designer.cs">
+      <DependentUpon>AddVariable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Answer.cs" />
+    <Compile Include="ChangeUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeUserForm.Designer.cs">
+      <DependentUpon>ChangeUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTabs\CheckTabs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\CheckTabs.Designer.cs">
+      <DependentUpon>CheckTabs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTabs\DB.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\DB.Designer.cs">
+      <DependentUpon>DB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTabs\DBDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\DBDesigner.Designer.cs">
+      <DependentUpon>DBDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTabs\DBSettings.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\DBSettings.Designer.cs">
+      <DependentUpon>DBSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTabs\DBSettingsDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\DBSettingsDesigner.Designer.cs">
+      <DependentUpon>DBSettingsDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTabs\TabInformationDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\TabInformationDesigner.Designer.cs">
+      <DependentUpon>TabInformationDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTabs\TabSettingsDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\TabSettingsDesigner.Designer.cs">
+      <DependentUpon>TabSettingsDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTabs\TabTelnetDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\TabTelnetDesigner.Designer.cs">
+      <DependentUpon>TabTelnetDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTabs\TabInformation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\TabInformation.Designer.cs">
+      <DependentUpon>TabInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTabs\TabWatch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\TabWatch.Designer.cs">
+      <DependentUpon>TabWatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTabs\TabWatchDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\TabWatchDesigner.Designer.cs">
+      <DependentUpon>TabWatchDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTabs\WatchVariable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\WatchVariable.Designer.cs">
+      <DependentUpon>WatchVariable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBaseWork.cs" />
+    <Compile Include="HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExportData.cs" />
+    <Compile Include="InfoClass.cs" />
+    <Compile Include="MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageForm.Designer.cs">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterUserForm.Designer.cs">
+      <DependentUpon>RegisterUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDataInterface.cs" />
+    <Compile Include="ClassesTabs\TabSettings.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\TabSettings.Designer.cs">
+      <DependentUpon>TabSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTabs\TabStatus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\TabStatus.Designer.cs">
+      <DependentUpon>TabStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTabs\TabTelnet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\TabTelnet.Designer.cs">
+      <DependentUpon>TabTelnet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTabs\TabUsers.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\TabUsers.Designer.cs">
+      <DependentUpon>TabUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTabs\TabUsersDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassesTabs\TabUsersDesigner.Designer.cs">
+      <DependentUpon>TabUsersDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="EntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntryForm.Designer.cs">
+      <DependentUpon>EntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Language.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpacityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpacityForm.Designer.cs">
+      <DependentUpon>OpacityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Template.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Template.Designer.cs">
+      <DependentUpon>Template.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestConnectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestConnectionForm.Designer.cs">
+      <DependentUpon>TestConnectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="UserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutProgramForm.resx">
+      <DependentUpon>AboutProgramForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewConnectionForm.resx">
+      <DependentUpon>AddNewConnectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVariable.resx">
+      <DependentUpon>AddVariable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeUserForm.resx">
+      <DependentUpon>ChangeUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTabs\CheckTabs.resx">
+      <DependentUpon>CheckTabs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTabs\DB.resx">
+      <DependentUpon>DB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTabs\DBDesigner.resx">
+      <DependentUpon>DBDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTabs\DBSettings.resx">
+      <DependentUpon>DBSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTabs\DBSettingsDesigner.resx">
+      <DependentUpon>DBSettingsDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTabs\TabInformation.resx">
+      <DependentUpon>TabInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTabs\TabInformationDesigner.resx">
+      <DependentUpon>TabInformationDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTabs\TabSettings.resx">
+      <DependentUpon>TabSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTabs\TabSettingsDesigner.resx">
+      <DependentUpon>TabSettingsDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTabs\TabStatus.resx">
+      <DependentUpon>TabStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTabs\TabTelnet.resx">
+      <DependentUpon>TabTelnet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTabs\TabTelnetDesigner.resx">
+      <DependentUpon>TabTelnetDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTabs\TabUsers.resx">
+      <DependentUpon>TabUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTabs\TabUsersDesigner.resx">
+      <DependentUpon>TabUsersDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTabs\TabWatchDesigner.resx">
+      <DependentUpon>TabWatchDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTabs\WatchVariable.resx">
+      <DependentUpon>WatchVariable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntryForm.resx">
+      <DependentUpon>EntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageForm.resx">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpacityForm.resx">
+      <DependentUpon>OpacityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisterUserForm.resx">
+      <DependentUpon>RegisterUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template.resx">
+      <DependentUpon>Template.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestConnectionForm.resx">
+      <DependentUpon>TestConnectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button Add-01111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button Add-01 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\connect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database-5-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingsOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\command-prompt-glossy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telnet.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jmet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_542910.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_reverse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watch.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
